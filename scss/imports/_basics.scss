@@ -1,0 +1,123 @@
+/*
+What is responsive design?  The idea of responsive design of course blew up becuase of the range of sizes of devices (MOBILE FIRST DESIGN).  Use CSS and media queries.
+
+HOW NOT TO DO IT:
+- start with designs on the wide screen and build features for the small screen.
+*/
+
+/* universal selector */
+* {
+	/* eliminates some border element, expand further?? apparently common practice*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	color: $dark-gray;
+	font-size: 100%;
+	font-family: Helvetica, arial, sans-serif;
+}
+
+.wrapper {
+	max-width: 67em;
+	margin: 0 auto;
+
+	/* moves the side bar in, all children adhere to the rules of the wrapper "left: 0"*/
+	position: relative;
+}
+
+nav {
+	margin-bottom: 1em;
+
+	ul {
+		/* this is called a "descendant selector" because it is an element within "nav" */
+		list-style: none;
+	}
+
+	li {
+		/* displays list items in a line instead of a bulleted, vertical list */
+		display: inline-block;
+
+		/* an "em" is 16 pixels, "rem" is a relative "em" */
+		margin-right: 1em;
+	}
+
+	a {
+		color: $dark-gray;
+		text-decoration: none;
+		padding: .5em;
+		display: block;
+		background-color: $tan;
+	}
+
+	/* a:hover is a pseudo-selector, why does it not highlight??? */
+	a:hover {
+		color: #fff;
+		background-color: $reddish;
+	}
+
+}
+
+.info {
+	position: static;
+	width: 100%;
+	background-color: $tan;
+	padding: .5em;
+	border: 1px solid $reddish;
+}
+
+@media (min-width: 46.25em) {
+	.info {
+		/* puts it into the 3rd dimension - in front of other stuff */
+		position: absolute;
+		top: 10em;
+		left: 0;
+		width: 10em;
+
+	}
+}
+
+
+/* HTML5 tag? */
+article {
+	margin-left: 1em;
+}
+
+@media (min-width: 46.25em) {
+	article {
+		margin: 2em 0 0 12em;
+	}
+}
+
+blockquote {
+	width: 100%;
+	padding: 1em;
+	font-size: 1.5em;
+
+	@media (min-width: 46.25em) {
+		float: right;
+		width: 40%;
+	}
+}
+
+p {
+	margin: 1em 0;
+}
+
+ul {
+	/* takes the bullets away */
+	list-style: none;
+}
+
+img {
+	float: right;
+}
+
+.p-cuisines .t-cuisines {
+    color: #fff;
+    background: $reddish;
+}
+
+
+
