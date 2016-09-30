@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Brooklyn Eats: Matsu</title>
+	<!-- Viewport tag invented by apple, pretty mandatory -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body class="p-cuisines">
+	<div class="wrapper">
+		<nav>
+			<ul>
+				<li><a href="index.html">Cuisines</a></li>
+				<li><a class="t-cuisines" href="recipes.html">Recipes</a></li>
+				<li><a href="#">Reviews</a></li>
+				<li><a href="#">Delivery</a></li>
+			</ul>
+		</nav>
+		<header>
+			<h1>Brooklyn Eats</h1>
+			<h2>Making your own fine dining in Brooklyn</h2>
+		</header>
+		<div itemscope itemtype="https://schema.org/Recipe">
+			<article>
+				<h2>Jamaican Jerk Chicken</h2>
+				<p>"Hot, succulent Jamaican Jerk Chicken is a tropical treat. You'll love the heat and flavor of this fiery marinade."</p>
+				<div class="info">
+					<h3>Nutrition</h3>
+					<div itemprop="nutrition" itemscope itemtype="http://schema.org/NutritionInformation">
+						<table>
+							<tbody>
+								<tr>
+									<th>Calories:</th>
+									<td itemprop="calories">200000</td>
+								</tr>
+								<tr>
+									<th>Protein:</th>
+									<td itemprop="proteinContent">200000</td>
+								</tr>
+								<tr>
+									<th>Trans Fat:</th>
+									<td itemprop="transFatContent">200000</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<br>
+					<h3>Information</h3>
+					<table>
+						<tr>
+							<th>Time:</th>
+							<td itemprop="cookTime">2 hours</td>
+						</tr>
+						<tr>
+							<th>Cuisine:</th>
+							<td itemprop="recipeCuisine">Jamaican</td>
+						</tr>
+					</table>
+				</div>
+				<h3>Instructions</h3>
+				<p itemprop="recipeInstructions">
+				First add water, then add chicken, then add spices.  Cook for two hours.
+				</p>
+			</article>
+		</div>
+	</div>
+</body>
+</html>

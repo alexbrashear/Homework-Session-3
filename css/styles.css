@@ -24,7 +24,7 @@ html, body {
 
 nav {
   margin-bottom: 1em;
-  /* a:hover is a pseudo-selector, why does it not highlight??? */ }
+  /* a:hover is a pseudo-selector */ }
   nav ul {
     /* this is called a "descendant selector" because it is an element within "nav" */
     list-style: none; }
@@ -32,15 +32,18 @@ nav {
     /* displays list items in a line instead of a bulleted, vertical list */
     display: inline-block;
     /* an "em" is 16 pixels, "rem" is a relative "em" */
-    margin-right: 1em; }
+    margin-right: 1em;
+    border-radius: 10px;
+    border: 2px solid #f0dfb4;
+    background-color: #f0dfb4; }
   nav a {
     color: #333;
     text-decoration: none;
     padding: .5em;
-    display: block;
-    background-color: #f0dfb4; }
+    display: block; }
   nav a:hover {
-    color: #fff;
+    color: #fff; }
+  nav li:hover {
     background-color: #600; }
 
 .info {

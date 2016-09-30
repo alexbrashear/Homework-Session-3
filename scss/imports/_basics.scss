@@ -41,6 +41,9 @@ nav {
 
 		/* an "em" is 16 pixels, "rem" is a relative "em" */
 		margin-right: 1em;
+		border-radius: 10px;
+		border: 2px solid $tan;
+		background-color: $tan;
 	}
 
 	a {
@@ -48,12 +51,14 @@ nav {
 		text-decoration: none;
 		padding: .5em;
 		display: block;
-		background-color: $tan;
 	}
 
-	/* a:hover is a pseudo-selector, why does it not highlight??? */
+	/* a:hover is a pseudo-selector */
 	a:hover {
 		color: #fff;
+	}
+
+	li:hover {
 		background-color: $reddish;
 	}
 
@@ -114,9 +119,13 @@ img {
 	float: right;
 }
 
-.p-cuisines .t-cuisines {
-    color: #fff;
+@mixin tab-selected {
+	color: #fff;
     background: $reddish;
+}
+
+.p-cuisines .t-cuisines {
+    @include tab-selected;
 }
 
 
