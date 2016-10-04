@@ -5,29 +5,37 @@
 	<title>Brooklyn Eats: Matsu</title>
 	<!-- Viewport tag invented by apple, pretty mandatory -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.6.3/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body class="p-cuisines">
-	<div class="wrapper">
-		<nav>
-			<ul>
-				<li><a href="index.html">Cuisines</a></li>
-				<li><a class="t-cuisines" href="recipes.html">Recipes</a></li>
-				<li><a href="#">Reviews</a></li>
-				<li><a href="#">Delivery</a></li>
-			</ul>
-		</nav>
-		<header>
-			<h1>Brooklyn Eats</h1>
-			<h2>Making your own fine dining in Brooklyn</h2>
+
+	<div class="site-header">
+		<header class="sub-header">
+			<div><h1 class="header-text">Brooklyn Eats</h1></div>
+			<div><h2 class="sub-header-text">A Guide to Fine North Brooklyn Dining</h2></div>
+			<nav class="sub-header-text">
+				<ul>
+					<li><a href="index.html">Cuisines</a></li>
+					<li><a class="t-cuisines" href="recipes.html">Recipes</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">Delivery</a></li>
+				</ul>
+			</nav>
 		</header>
+	</div>
+	<div class="wrapper">
 		<div itemscope itemtype="https://schema.org/Recipe">
 			<article>
 				<h2>Jamaican Jerk Chicken</h2>
 				<p>"Hot, succulent Jamaican Jerk Chicken is a tropical treat. You'll love the heat and flavor of this fiery marinade."</p>
-				<div class="info">
-					<h3>Nutrition</h3>
+				<h3>Instructions</h3>
+				<p itemprop="recipeInstructions">
+					First add water, then add chicken, then add spices.  Cook for two hours.
+				</p>
+				<h3>Nutrition</h3>
 					<div itemprop="nutrition" itemscope itemtype="http://schema.org/NutritionInformation">
 						<table>
 							<tbody>
@@ -58,13 +66,18 @@
 							<td itemprop="recipeCuisine">Jamaican</td>
 						</tr>
 					</table>
-				</div>
-				<h3>Instructions</h3>
-				<p itemprop="recipeInstructions">
-				First add water, then add chicken, then add spices.  Cook for two hours.
-				</p>
 			</article>
 		</div>
+	</div>
+	<div class="footer">
+		<nav>
+			<ul>
+				<li><a href="http://facebook.com"><i class="fa fa-facebook fa-2x"></i></a></li>
+				<li><a href="http://twitter.com"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<li><a href="http://instagram.com"><i class="fa fa-instagram fa-2x"></i></a></li>
+				<li><a href="http://vimeo.com"><i class="fa fa-vimeo fa-2x"></i></a></li>
+			</ul>
+		</nav>
 	</div>
 </body>
 </html>

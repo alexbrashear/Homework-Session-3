@@ -5,6 +5,35 @@ HOW NOT TO DO IT:
 - start with designs on the wide screen and build features for the small screen.
 */
 
+.site-header {
+	display: flex;
+	justify-content: center;
+	background-color: $blue;
+}
+
+.sub-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.header-text {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-weight: 900;
+}
+
+.sub-header-text {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	background-color: $light-gray;
+	padding: 2em;
+}
+
 /* universal selector */
 * {
 	/* eliminates some border element, expand further?? apparently common practice*/
@@ -13,7 +42,15 @@ HOW NOT TO DO IT:
 	padding: 0;
 }
 
-html, body {
+html {
+	background-color: $blue;
+	color: $dark-gray;
+	font-size: 100%;
+	font-family: Helvetica, arial, sans-serif;
+}
+
+body {
+	background-color: #fff;
 	color: $dark-gray;
 	font-size: 100%;
 	font-family: Helvetica, arial, sans-serif;
@@ -41,9 +78,6 @@ nav {
 
 		/* an "em" is 16 pixels, "rem" is a relative "em" */
 		margin-right: 1em;
-		border-radius: 10px;
-		border: 2px solid $tan;
-		background-color: $tan;
 	}
 
 	a {
@@ -56,10 +90,6 @@ nav {
 	/* a:hover is a pseudo-selector */
 	a:hover {
 		color: #fff;
-	}
-
-	li:hover {
-		background-color: $reddish;
 	}
 
 }
@@ -121,7 +151,6 @@ img {
 
 @mixin tab-selected {
 	color: #fff;
-    background: $reddish;
 }
 
 .p-cuisines .t-cuisines {
