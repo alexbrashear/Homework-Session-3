@@ -7,77 +7,96 @@ HOW NOT TO DO IT:
 .site-header {
   display: flex;
   justify-content: center;
-  background-color: #67BCDB; }
+  background-color: #67BCDB;
+}
 
 .sub-header {
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .header-text {
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
-  font-weight: 900; }
+  font-weight: 900;
+}
 
 .sub-header-text {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+}
 
 .footer {
   display: flex;
   justify-content: center;
   background-color: #F5F3EE;
-  padding: 2em; }
+  padding: 2em;
+}
 
 /* universal selector */
 * {
   /* eliminates some border element, expand further?? apparently common practice*/
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 html {
   background-color: #67BCDB;
   color: #333;
   font-size: 100%;
-  font-family: Helvetica, arial, sans-serif; }
+  font-family: Helvetica, arial, sans-serif;
+}
 
 body {
   background-color: #fff;
   color: #333;
   font-size: 100%;
-  font-family: Helvetica, arial, sans-serif; }
+  font-family: Helvetica, arial, sans-serif;
+}
 
 .wrapper {
   max-width: 67em;
   margin: 0 auto;
   /* moves the side bar in, all children adhere to the rules of the wrapper "left: 0"*/
-  position: relative; }
+  position: relative;
+}
 
 nav {
   margin-bottom: 1em;
-  /* a:hover is a pseudo-selector */ }
-  nav ul {
-    /* this is called a "descendant selector" because it is an element within "nav" */
-    list-style: none; }
-  nav li {
-    /* displays list items in a line instead of a bulleted, vertical list */
-    display: inline-block;
-    /* an "em" is 16 pixels, "rem" is a relative "em" */
-    margin-right: 1em; }
-  nav a {
-    color: #333;
-    text-decoration: none;
-    padding: .5em;
-    display: block; }
-  nav a:hover {
-    color: #fff; }
+  /* a:hover is a pseudo-selector */
+}
+
+nav ul {
+  /* this is called a "descendant selector" because it is an element within "nav" */
+  list-style: none;
+}
+
+nav li {
+  /* displays list items in a line instead of a bulleted, vertical list */
+  display: inline-block;
+  /* an "em" is 16 pixels, "rem" is a relative "em" */
+  margin-right: 1em;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: .5em;
+  display: block;
+}
+
+nav a:hover {
+  color: #fff;
+}
 
 .info {
   position: static;
   width: 100%;
   background-color: #f0dfb4;
   padding: .5em;
-  border: 1px solid #600; }
+  border: 1px solid #600;
+}
 
 @media (min-width: 46.25em) {
   .info {
@@ -85,34 +104,49 @@ nav {
     position: absolute;
     top: 10em;
     left: 0;
-    width: 10em; } }
+    width: 10em;
+  }
+}
+
 /* HTML5 tag? */
 article {
-  margin-left: 1em; }
+  margin-left: 1em;
+}
 
 @media (min-width: 46.25em) {
   article {
-    margin: 2em 0 0 12em; } }
+    margin: 2em 0 0 12em;
+  }
+}
+
 blockquote {
   width: 100%;
   padding: 1em;
-  font-size: 1.5em; }
-  @media (min-width: 46.25em) {
-    blockquote {
-      float: right;
-      width: 40%; } }
+  font-size: 1.5em;
+}
+
+@media (min-width: 46.25em) {
+  blockquote {
+    float: right;
+    width: 40%;
+  }
+}
 
 p {
-  margin: 1em 0; }
+  margin: 1em 0;
+}
 
 ul {
   /* takes the bullets away */
-  list-style: none; }
+  list-style: none;
+}
 
 img {
-  float: right; }
+  float: right;
+}
 
 .p-cuisines .t-cuisines {
-  color: #fff; }
+  color: #fff;
+}
 
 /*# sourceMappingURL=styles.css.map */
