@@ -1,3 +1,3 @@
-# NYU MEAN class fall 2016 homework
+# NYU MEAN Class HW
 
 http://oit2.scps.nyu.edu/~brasheaa/
